@@ -109,9 +109,6 @@ header {
     font-weight: 700;
     font-size: 22px;
 }
-.search{
-    /* margin-left: 55px; */
-}
 .paratitle {
     font-weight: 400;
     font-size: 16px;
@@ -601,9 +598,7 @@ footer {
     .contact {
         grid-template-columns: repeat(1, 1fr);
     }
-    .contFilter {
 
-    }
     .filtres {
         row-gap: 1rem;
     }
