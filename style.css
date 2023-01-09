@@ -17,6 +17,7 @@ header {
     display: flex;
     flex-direction: column;
     padding: 1rem;
+    width: 50%;
 }
 .contstars {
     margin-top: .5rem;
@@ -494,6 +495,32 @@ footer {
         width: 100%;
         display: flex;
         justify-content: center;
+    }
+    .subtitle::after {
+        content: '';
+        position: absolute;
+        transition: .15s;
+        transform: scale(0);
+        height: 2px;
+        width: 100%;
+        bottom: 0;
+        background-color: #0065FC;
+        box-shadow: #0065FC 0px -2px;
+        transition: .15s;
+    }
+    .subtitle:hover::after {
+        content: '';
+        position: absolute;
+        transition: .15s;
+        height: 2px;
+        width: 100%;
+        transform: scale(1);
+        bottom: 0;
+        background-color: #0065FC;
+        box-shadow: #0065FC 0px -2px;
+    }
+    .subtitle::before {
+        display: none;
     }
     .contincone {
         padding-left: 2rem;
