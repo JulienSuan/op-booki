@@ -36,9 +36,6 @@ header {
     background-size: cover;
     background-image: url('./ressources/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg');
 }
-.padding {
-    padding: 1rem;
-}
 .tags {
     display: flex;
     column-gap: 55px;
@@ -59,7 +56,7 @@ header {
 .logo {
     color: #0065FC;
     font-size: 2rem;
-    height: 60%;
+    height: 19px;
 }
 .subtitle {
     font-size: 16px;
@@ -121,6 +118,12 @@ header {
     font-weight: 700;
     font-size: 18px;
 }
+.filtress{
+    margin-right: 1rem;
+}
+.button {
+    margin: 0;
+}
 .contInput {
     margin-top: 20px;
     display: flex;
@@ -150,20 +153,33 @@ header {
     cursor: pointer;
     line-height: 20px;
 }
+.cont_filter_btn {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 2rem;
+}
 .filtres {
+    align-items: center;
+    justify-content: flex-start;
     display: flex;
     /* margin-left: 55px; */
     column-gap: 3rem;
     align-items: center;
-    margin-top: 36px;
     font-size: 17px;
     font-weight: 700;
+    position: relative;
 }
 .buttonFiltre:hover {
     background-color: #DEEBFF;
 }
 .icon {
     height: 18px;
+}
+.contFilter {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 2rem;
 }
 .sectitle {
     font-family: 'Raleway';
@@ -193,7 +209,10 @@ header {
     margin-top: 4rem;
 }
 .cont {
-    padding: 0 50px 0 50px;
+    max-width: 1400px;
+    width: 100%;
+    margin: 0px auto;
+    padding: 0rem 2rem;
 }
 .img {
     height: 100%;
@@ -216,7 +235,7 @@ header {
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
-    margin-bottom: 48px;
+    margin: 2rem 0rem;
     cursor: pointer;
 }
 .top {
@@ -270,9 +289,9 @@ header {
 }
 .contincone {
     margin-top: 2rem;
-    /* margin-left: 55px; */
-    display: flex;
+    display:flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 .info {
     font-family: 'Raleway';
@@ -326,10 +345,27 @@ footer {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url("./ressources//hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
     width: 100%;
-    height: 250px;
+    height: 150px;
     border: 5px solid #FFFFFF
+}
+.imgcard1 {
+    background-image: url("./ressources/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
+}
+.imgcard2 {
+    background-image: url("./ressources/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
+}
+.imgcard3 {
+    background-image: url("./ressources/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg");
+}
+.imgcard4 {
+    background-image: url("./ressources/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
+}
+.imgcard5 {
+    background-image: url("./ressources/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
+}
+.imgcard6 {
+    background-image: url("./ressources/hebergements/2_large/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
 }
 .contcarda {
     display: flex;
@@ -354,7 +390,6 @@ footer {
     padding: 16px;
 }
 .card {
-    height: auto;
     background: #FFFFFF;
     border-radius: 20px;
     box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
@@ -385,6 +420,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 43px;
+    padding: 2rem;
 }
 .cardo {
     box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
@@ -436,11 +472,64 @@ footer {
     .contact {
         grid-template-columns: repeat(2, 1fr);
     }
+    .cont_filter_btn {
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        row-gap: 1rem;
+    }
 }
 @media screen and (max-width: 880px) {
+    .logo {
+        color: #0065FC;
+        font-size: 2rem;
+        height: 19px;
+        margin-top: 1rem;
+    }
+    .tags {
+        width: 100%;
+        border-bottom: #F2F2F2 solid 2px;
+        gap: 0px;
+    }
+    .subtitle {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .contincone {
+        padding-left: 2rem;
+    }
     .contcard {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(2, 1fr);
+    }
+    .hebergtitle2 {
+        margin-left: 2rem;
+    }
+    .contFilter {
+        padding-left: 2rem;
+        row-gap: 1rem;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .search {
+        padding-left: 2rem;
+        padding-top: 2rem;
+    }
+    .buttonFiltre{
+        font-size: 1rem;
+    }
+    .conthot {
+        border-radius: 0px;
+        background-color: transparent;
+    }
+    .hebergtitlee {
+        display: none;
+    }
+    .heberg {
+        flex-direction: column-reverse;
+    }
+    .contpophot {
+        border-radius: 0px;
     }
     .contcarda {
         flex-direction: column;
@@ -449,16 +538,11 @@ footer {
     .contact {
         grid-template-columns: repeat(1, 1fr);
     }
-    .filtres {
-        margin-top: 5rem;
-        display: grid;
-        position: relative;
-        grid-template-columns: repeat(2, 1fr);
-        row-gap: 1rem;
+    .contFilter {
+
     }
-    .filtress {
-        position: absolute;
-        top: -2rem;
+    .filtres {
+        row-gap: 1rem;
     }
     footer {
         flex-direction: column;
@@ -473,11 +557,10 @@ footer {
         flex-direction: column;
     }
     .cont {
-        padding: 0;
+        padding: 0rem;
     }
     .contInput {
         width: 100%;
-        justify-content: center;
         align-items: center;
     }
     .after {
@@ -490,5 +573,14 @@ footer {
 @media screen and (max-width: 500px) {
     .filtres {
         grid-template-columns: repeat(1, 1fr);
+    }
+    .cont_filter_btn {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .searchInput {
+        width: 100%;
+    }
+    .contInput {
+        padding-right: 2rem;
     }
 }
