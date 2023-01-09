@@ -19,6 +19,9 @@ header {
     padding: 1rem;
     width: 50%;
 }
+.fa-star {
+    color: #0065FC;
+}
 .contstars {
     margin-top: .5rem;
 }
@@ -35,7 +38,13 @@ header {
     height: 100%;
     background-position: center;
     background-size: cover;
-    background-image: url('./ressources/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg');
+    background-image: url('/images/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg');
+}
+.card2img1 {
+    background-image: url('/images/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg');
+}
+.card2img2 {
+    background-image: url('/images/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg');
 }
 .tags {
     display: flex;
@@ -201,7 +210,7 @@ header {
     margin-right: .5rem;
     color: #0065FC;
 }
-.hebergtitle2 {
+#hebergtitle2 {
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
@@ -218,14 +227,24 @@ header {
 .img {
     height: 100%;
     width: 100%;
-    background-image: url("./ressources/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg");
+    background-image: url("/images/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     border-top-left-radius: 20px;
-    border-top-right-radius: 20px;  
+    border-top-right-radius: 20px;
+    cursor: pointer;
 }
-.hebergtitle {
+.img1 {
+    background-image: url("/images/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
+}
+.img2 {
+    background-image: url("/images/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
+}
+.img3 {
+    background-image: url("/images/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg");
+}
+#hebergtitle {
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
@@ -246,6 +265,14 @@ header {
     justify-content: space-around;
     width: 100%;
     align-items: center;
+}
+html {
+    scroll-behavior: smooth;
+}
+a {
+    color: none;
+    text-decoration: none;
+    height: 100%;
 }
 .stonk {
     color: #0065FC
@@ -351,22 +378,22 @@ footer {
     border: 5px solid #FFFFFF
 }
 .imgcard1 {
-    background-image: url("./ressources/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
+    background-image: url("/images/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
 }
 .imgcard2 {
-    background-image: url("./ressources/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
+    background-image: url("/images/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
 }
 .imgcard3 {
-    background-image: url("./ressources/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg");
+    background-image: url("/images/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg");
 }
 .imgcard4 {
-    background-image: url("./ressources/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
+    background-image: url("/images/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
 }
 .imgcard5 {
-    background-image: url("./ressources/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
+    background-image: url("/images/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
 }
 .imgcard6 {
-    background-image: url("./ressources/hebergements/2_large/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
+    background-image: url("/images/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
 }
 .contcarda {
     display: flex;
@@ -395,6 +422,8 @@ footer {
     border-radius: 20px;
     box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
     transition: .15s;
+    cursor: pointer;
+
 }
 .card:hover {
     transform: translateY(-5px);
@@ -408,6 +437,8 @@ footer {
     border-radius: 20px;
     display: flex;
     transition: .15s;
+    cursor: pointer;
+
 }
 .card2:hover {
     transform: translateY(-5px);
@@ -480,6 +511,11 @@ footer {
     }
 }
 @media screen and (max-width: 880px) {
+    a {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
     .logo {
         color: #0065FC;
         font-size: 2rem;
@@ -529,7 +565,7 @@ footer {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(2, 1fr);
     }
-    .hebergtitle2 {
+    #hebergtitle2 {
         margin-left: 2rem;
     }
     .contFilter {
@@ -609,5 +645,11 @@ footer {
     }
     .contInput {
         padding-right: 2rem;
+    }
+    .contpophot {
+        padding: 2rem .5rem;
+    }
+    .conthot {
+        padding: 2rem .5rem;
     }
 }
