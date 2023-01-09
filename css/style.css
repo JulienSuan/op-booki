@@ -38,13 +38,13 @@ header {
     height: 100%;
     background-position: center;
     background-size: cover;
-    background-image: url('./images/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg');
+    background-image: url('/images/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg');
 }
 .card2img1 {
-    background-image: url('./images/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg');
+    background-image: url('/images/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg');
 }
 .card2img2 {
-    background-image: url('./images/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg');
+    background-image: url('/images/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg');
 }
 .tags {
     display: flex;
@@ -227,7 +227,7 @@ header {
 .img {
     height: 100%;
     width: 100%;
-    background-image: url("./images/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
+    background-image: url("/images/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -236,13 +236,13 @@ header {
     cursor: pointer;
 }
 .img1 {
-    background-image: url("./images/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
+    background-image: url("/images/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
 }
 .img2 {
-    background-image: url("./images/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
+    background-image: url("/images/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
 }
 .img3 {
-    background-image: url("./images/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg");
+    background-image: url("/images/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg");
 }
 #hebergtitle {
     font-family: 'Raleway';
@@ -378,22 +378,22 @@ footer {
     border: 5px solid #FFFFFF
 }
 .imgcard1 {
-    background-image: url("./images/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
+    background-image: url("/images/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
 }
 .imgcard2 {
-    background-image: url("./images/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
+    background-image: url("/images/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
 }
 .imgcard3 {
-    background-image: url("./images/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg");
+    background-image: url("/images/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg");
 }
 .imgcard4 {
-    background-image: url("./images/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
+    background-image: url("/images/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
 }
 .imgcard5 {
-    background-image: url("./images/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
+    background-image: url("/images/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
 }
 .imgcard6 {
-    background-image: url("./images/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
+    background-image: url("/images/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
 }
 .contcarda {
     display: flex;
