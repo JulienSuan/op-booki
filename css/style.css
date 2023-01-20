@@ -606,7 +606,6 @@ footer {
         flex-direction: column;
         height: auto;
         justify-content: center;
-        align-items: center;
     }
     .sec {
         margin-bottom: 2rem;
