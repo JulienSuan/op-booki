@@ -165,7 +165,14 @@ header {
     grid-template-columns: repeat(4, 1fr);
     column-gap: 2rem;
 }
-.filtres {
+.scrolltop {
+    inset: 0;
+    width: fit-content;
+    height: fit-content;
+    padding: 1rem;
+    position: relative;
+}
+.filtress {
     align-items: center;
     justify-content: flex-start;
     display: flex;
@@ -183,7 +190,6 @@ header {
     height: 18px;
 }
 .contFilter {
-    display: flex;
     justify-content: start;
     align-items: center;
     margin-top: 2rem;
@@ -245,6 +251,7 @@ header {
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
+    margin-top: 3rem;
     font-size: 22px;
 }
 .hebergtitlee {
@@ -259,7 +266,7 @@ header {
     /* position: absolute; */
     top: 42px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
     align-items: center;
 }
@@ -316,7 +323,6 @@ a {
     margin-top: 2rem;
     display:flex;
     align-items: center;
-    flex-wrap: wrap;
 }
 .info {
     font-family: 'Raleway';
@@ -334,6 +340,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+    min-width: 24px;
 }
 .infoico {
     height: 10px;
@@ -341,7 +348,7 @@ a {
 }
 .conthot {
     width: 75%;
-    padding: 42px 40px 0 40px;
+    padding: 0 2rem;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -449,7 +456,6 @@ footer {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 43px;
-    padding: 2rem;
 }
 .cardo {
     box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
@@ -473,7 +479,14 @@ footer {
 
 /* MEDIA QUEEEEEEEERYYYYYYYY ✨✨✨*/
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 992px) {
+    .contcard {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .contact {
+        grid-template-columns: repeat(2, 1fr);
+    }
     .heberg {
         flex-direction: column;  
     }
@@ -493,21 +506,27 @@ footer {
         column-gap: 2rem;
     }
 }
-@media screen and (max-width: 1100px) {
-    .contcard {
+
+@media screen and (max-width: 768px) {
+    .cont_filter_btn {
+        padding: 1rem 1rem;
+        display: grid;
+        gap: 1rem;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
     }
-    .contact {
-        grid-template-columns: repeat(2, 1fr);
+    .contcarda {
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
     }
-    .cont_filter_btn {
-        grid-template-columns: repeat(2, 1fr);
-        width: 100%;
-        row-gap: 1rem;
+    .filtress {
+        margin-bottom: 1rem;
+        margin-left: 1rem;
     }
-}
-@media screen and (max-width: 880px) {
+    .search {
+        padding: 1rem 0 0 1rem;
+    }
     a {
         width: 100%;
         display: flex;
@@ -556,27 +575,24 @@ footer {
         display: none;
     }
     .contincone {
-        padding-left: 2rem;
+        padding-left: 1rem;
+        flex: 1;
+    }
+    .activite {
+        padding: 0 2rem;
     }
     .contcard {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(2, 1fr);
     }
     #hebergtitle2 {
-        margin-left: 2rem;
-    }
-    .contFilter {
-        padding-left: 2rem;
-        row-gap: 1rem;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .search {
-        padding-left: 2rem;
-        padding-top: 2rem;
+        margin-left: 0rem;
     }
     .buttonFiltre{
         font-size: 1rem;
+    }
+    .contincone {
+        display: flex;
     }
     .conthot {
         border-radius: 0px;
@@ -626,13 +642,14 @@ footer {
     .loop {
         display: block;
     }
-}
-@media screen and (max-width: 500px) {
     .filtres {
         grid-template-columns: repeat(1, 1fr);
     }
-    .cont_filter_btn {
-        grid-template-columns: repeat(1, 1fr);
+    .activite {
+        padding: 0 1rem;
+    }
+    .buttonFiltre {
+        padding: 1rem .5rem;
     }
     .searchInput {
         width: 100%;
@@ -641,9 +658,14 @@ footer {
         padding-right: 2rem;
     }
     .contpophot {
-        padding: 2rem .5rem;
+        padding: 2rem 1rem;
     }
     .conthot {
-        padding: 2rem .5rem;
+        padding: 2rem 1rem;
+    }
+    .cont_filter_btn {
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        row-gap: 1rem;
     }
 }
